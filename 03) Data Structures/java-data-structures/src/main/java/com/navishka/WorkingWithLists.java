@@ -13,10 +13,14 @@ public class WorkingWithLists {
 
         System.out.println(colors);
 
+        //Specifying the data type
         List<String> colorsTwo = new ArrayList<>();
         colorsTwo.add("blue");
         colorsTwo.add("yellow");
 
         System.out.println(colorsTwo);
+        System.out.println(colorsTwo.size());
+        System.out.println(colorsTwo.contains("blue"));
+        System.out.println(colorsTwo.contains("pink"));
     }
 }
