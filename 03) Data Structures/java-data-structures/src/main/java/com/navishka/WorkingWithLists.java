@@ -12,5 +12,11 @@ public class WorkingWithLists {
         colors.add(new Object());
 
         System.out.println(colors);
+
+        List<String> colorsTwo = new ArrayList<>();
+        colorsTwo.add("blue");
+        colorsTwo.add("yellow");
+
+        System.out.println(colorsTwo);
     }
 }
