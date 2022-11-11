@@ -22,5 +22,19 @@ public class WorkingWithLists {
         System.out.println(colorsTwo.size());
         System.out.println(colorsTwo.contains("blue"));
         System.out.println(colorsTwo.contains("pink"));
+
+        //Printing a List
+        //Using an enhanced for loop
+        for (String color: colorsTwo) {
+            System.out.println(color);
+        }
+
+        //Using a for each
+        colorsTwo.forEach(System.out::println);
+
+        //Using a for loop
+        for (int i = 0; i < colorsTwo.size(); i++) {
+            System.out.println(colorsTwo.get(i));
+        }
     }
 }
