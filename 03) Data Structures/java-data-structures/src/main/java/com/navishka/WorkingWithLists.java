@@ -5,6 +5,14 @@ import java.util.List;
 
 public class WorkingWithLists {
     public static void main(String[] args) {
+
+        // Construct a List using of() method
+        List colorsUnmodifiable = List.of(
+                "blue",
+                "yellow"
+        );
+        System.out.println(colorsUnmodifiable);
+
         List colors = new ArrayList();
         colors.add("blue");
         colors.add("yellow");
@@ -13,7 +21,7 @@ public class WorkingWithLists {
 
         System.out.println(colors);
 
-        //Specifying the data type
+        // Specifying the data type
         List<String> colorsTwo = new ArrayList<>();
         colorsTwo.add("blue");
         colorsTwo.add("yellow");
@@ -23,16 +31,16 @@ public class WorkingWithLists {
         System.out.println(colorsTwo.contains("blue"));
         System.out.println(colorsTwo.contains("pink"));
 
-        //Printing a List
-        //Using an enhanced for loop
+        // Printing a List
+        // Using an enhanced for loop
         for (String color: colorsTwo) {
             System.out.println(color);
         }
 
-        //Using a for each
+        // Using a for each
         colorsTwo.forEach(System.out::println);
 
-        //Using a for loop
+        // Using a for loop
         for (int i = 0; i < colorsTwo.size(); i++) {
             System.out.println(colorsTwo.get(i));
         }
