@@ -9,6 +9,7 @@ public class WorkingWithLinkedLists {
         linkedList.add(new Person("Alex", 21));
         linkedList.add(new Person("Mariam", 18));
         linkedList.add(new Person("Ali", 24));
+        linkedList.addFirst(new Person("Jan", 25));
 
         System.out.println(linkedList);
 
