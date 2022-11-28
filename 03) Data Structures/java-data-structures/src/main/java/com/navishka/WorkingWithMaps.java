@@ -18,6 +18,14 @@ public class WorkingWithMaps {
         System.out.println(map.containsKey(4));
         System.out.println(map.keySet());
         System.out.println(map.entrySet());
+
+        // Looping through a Map
+        map.entrySet().forEach(System.out::println);
+        map.entrySet().
+                forEach(x -> System.out.println(x.getKey() + " " + x.getValue()));
+        map.forEach((key, person) -> {
+            System.out.println(key + " - " + person);
+        });
     }
 
     record Person(String name) {}
