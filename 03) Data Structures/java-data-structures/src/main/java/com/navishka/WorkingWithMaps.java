@@ -26,6 +26,9 @@ public class WorkingWithMaps {
         map.forEach((key, person) -> {
             System.out.println(key + " - " + person);
         });
+
+        // Use of getOrDefault() method
+        System.out.println(map.getOrDefault(4, new Person("Default")));
     }
 
     record Person(String name) {}
