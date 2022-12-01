@@ -29,6 +29,8 @@ public class WorkingWithMaps {
 
         // Use of getOrDefault() method
         System.out.println(map.getOrDefault(4, new Person("Default")));
+
+        System.out.println(map.values());
     }
 
     record Person(String name) {}
